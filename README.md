@@ -1,9 +1,9 @@
 <p align="center">
-  <a href="https://github.com/canxin121/nonebot_api_paddleocr"><img src="https://github.com/canxin121/nonebot_paddle_ocr/blob/main/demo/logo_transparent.png" width="200" height="200" alt="nonebot_paddle_ocr"></a>
+  <a href="https://github.com/canxin121/nonebot_api_paddleocr"><img src="https://github.com/canxin121/nonebot_paddle_ocr/blob/main/demo/logo_transparent.png" width="200" height="200" alt="nonebot_api_paddleocr"></a>
 </p>
 <div align="center">
 
-# nonebot_paddle_ocr
+# nonebot_api_paddleocr
 
 ✨*基于Nonebot的插件，能够将api版本的Paddle OCR接入QQ使用*✨
   
