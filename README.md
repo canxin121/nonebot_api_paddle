@@ -30,10 +30,10 @@ pip install nonebot-api-paddle
 
 ## 示例
 
-| | | |
-|:-------------------------:|:-------------------------:|:-------------------------:|
-|<img src="https://github.com/canxin121/nonebot_paddle_ocr/blob/main/demo/demo%20(3).jpg" width="200">|
-|<img src="https://github.com/canxin121/nonebot_paddle_ocr/blob/main/demo/demo%20(3).jpg" width="200">|
+| Image 1 | Image 2 |
+|:-------:|:-------:|
+| ![](https://github.com/canxin121/nonebot_api_paddle/blob/main/demo/demo.png) | ![](https://github.com/canxin121/nonebot_api_paddle/raw/main/demo/demo.jpg) |
+
 ## 开源协议
 
 本项目使用了Paddle OCR，并遵守了Apache License 2.0开源协议。
