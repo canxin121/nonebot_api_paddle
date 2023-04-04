@@ -1,3 +1,4 @@
+<p align="center">
 <a href="https://github.com/canxin121/nonebot_api_paddleocr"><img src="https://github.com/canxin121/nonebot_paddle_ocr/blob/main/demo/logo_transparent.png" width="200" height="200" alt="nonebot_api_paddle"></a>
 </p>
 <div align="center">
