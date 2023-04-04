@@ -16,13 +16,13 @@
 ##转语音功能
 - 将文本内容转化成语音 
 ## 安装
----
+```
 nb plugin install nonebot-api-paddle
----
+```
 或者pip安装并添加到pyproject.toml的plugins列表中
----
+```
 pip install nonebot-api-paddle
----
+```
 ## 使用方法
 
  网页api识别：发送 `/apiocr`，仅支持中英文和数字标点的照片，不可切换语言，发送 `/结束` 即可结束当前用户对话，用户互不影响。
