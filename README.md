@@ -51,7 +51,6 @@ paddle_at = False
 |:-------:|:-------:|
 | ![](https://github.com/canxin121/nonebot_api_paddle/blob/main/demo/demo%20(1).png) | ![](https://github.com/canxin121/nonebot_api_paddle/blob/main/demo/demo%20(1).jpg) |
 | Image 3 | Image 4 |
-|:-------:|:-------:|
 | ![](https://github.com/canxin121/nonebot_api_paddle/blob/main/demo/demo%20(2).png) | ![](https://github.com/canxin121/nonebot_api_paddle/blob/main/demo/demo%20(3).png) |
 ## 开源协议
 
