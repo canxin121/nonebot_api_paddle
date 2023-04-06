@@ -18,14 +18,14 @@
 - 将文本内容转化成语音   
 ## 表格图转文件功能  
 - 将图片中的表格还原到文件中  
-## 安装  
-```  
+## 安装
+```
 nb plugin install nonebot-api-paddle  
-```  
+```
 或者pip安装并添加到pyproject.toml的plugins列表中  
-```  
+```
 pip install nonebot-api-paddle  
-```  
+```
 ## 配置（在.env or .env.dav中修改）  
 以下配置为默认配置，如不需修改可以不写   
 
