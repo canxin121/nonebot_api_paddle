@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+nonebot_api_paddle/__init__.py
+nonebot_api_paddle/api_excel.py
+nonebot_api_paddle/api_ocr.py
+nonebot_api_paddle/api_voice.py
+nonebot_api_paddle.egg-info/PKG-INFO
+nonebot_api_paddle.egg-info/SOURCES.txt
+nonebot_api_paddle.egg-info/dependency_links.txt
+nonebot_api_paddle.egg-info/requires.txt
+nonebot_api_paddle.egg-info/top_level.txt

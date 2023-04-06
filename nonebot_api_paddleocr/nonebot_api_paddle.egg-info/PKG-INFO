@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: nonebot-api-paddle
+Version: 1.0.2
+Summary: nonbot_api_paddle
+Home-page: https://github.com/canxin121/nonebot_api_paddle
+Author: canxin
+Author-email: 1969730106@qq.com
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+**Features**
+Supports use in group chat and private chat
+Supports continuous conversation
+Supports Chinese, English and characters
+
+**Usage**
+Web API recognition: send /apiocr, only support photos of Chinese, English and digital punctuation, cannot switch languages. Send /end to end the current user conversation, and users do not affect each other.
