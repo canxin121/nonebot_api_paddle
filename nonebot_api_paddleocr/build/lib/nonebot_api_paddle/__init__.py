@@ -51,7 +51,7 @@ async def get_pic(bot: Bot, event: Event, state: T_State):
             url = segment.data['url']
             response = urllib.request.urlopen(url)
             img = io.BytesIO(response.read())
-            resulttext = api_paddle_ocr(img=img)
+            resulttext = await api_paddle_ocr(img=img)
             await ocr_api.reject(resulttext)
         elif segment.type == 'text':
             if getmsg[0].data['text'] == '/结束':
@@ -72,13 +72,13 @@ voice_api = on_keyword({*voice_keyword_config_},rule=_tome_)
 async def handlevoice(bot: Bot, event: Event, state: T_State):
     if bool(event.reply):
         text = event.reply.message[0].data['text']
-        url = getvoice(text)
+        url = await getvoice(text)
         record = MessageSegment.record(file=url)
         await voice_api.finish(record)
     else:
         text = event.get_plaintext()
         text = text.replace('/转语音', '').replace('/说', '')
-        url = getvoice(text)
+        url = await getvoice(text)
         record = MessageSegment.record(file=url)
         await voice_api.finish(record)
 
@@ -99,14 +99,14 @@ excel_api = on(rule=(excel_command&_tome_))
 async def handle_apiexcel(bot: Bot, event: Event, state: T_State):
     await excel_api.send("开始apiexcel识别模式")
 
-@excel_api.got("pic")
+@excel_api.got("")
 async def get_pic(bot: Bot, event: Event, state: T_State):
     getmsg = event.get_message()
     for segment in getmsg:
         if segment.type == 'image':
             await excel_api.send("正在识别~~")
             url = segment.data['url']
-            resulttext,filename= api_paddle_apiexcel(url)
+            resulttext,filename= await api_paddle_apiexcel(url)
             await excel_api.send(resulttext)
             filepath = os.path.dirname(os.path.realpath(__file__)) + r'\temp.xlsx'
             if isinstance(event, GroupMessageEvent) or isinstance(event, GroupUploadNoticeEvent):

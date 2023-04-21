@@ -1,9 +1,9 @@
-import os
-import requests
 import json
+import aiohttp
+import asyncio
+import os
 
-
-def getvoice(text) -> str:
+async def getvoice(text: str) -> str:
     url = 'https://aistudio.baidu.com/serving/app/10/run/predict/'
 
     headers = {
@@ -19,8 +19,10 @@ def getvoice(text) -> str:
         "session_hash": "playgnwv9r"
     }
 
-    response = requests.post(url, headers=headers, data=json.dumps(data))
-    json_data = json.loads(response.text)
-    file_name = str(json_data['data'][0]['name'])
-    url = 'https://aistudio.baidu.com/serving/app/10/file=' + file_name
-    return url
+    async with aiohttp.ClientSession(headers=headers) as session:
+        async with session.post(url, data=json.dumps(data)) as response:
+            json_data = await response.json()
+            file_name = str(json_data['data'][0]['name'])
+            url = 'https://aistudio.baidu.com/serving/app/10/file=' + file_name
+
+            return url
